@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- font-family monserat and ubuntu link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome link -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+    <main id="main-doc">
+        <div class="row">
+            <div class="col-md-3 navigation">
+                <div class="sticky-top">
+                    <section>
+                        <nav id="navbar">
+                            <header>
+                                <h2 style="color:#28abb9;">Flutter Documentation</h2>
+                            </header>
+                            <a href="#Get_started" class="nav-link">Get started</a>
+                            <hr>
+                            <a href="#Samples_&_tutorials" class="nav-link">Samples & tutorials</a>
+                            <hr>
+                            <a href="#Development" class="nav-link">Development</a>
+                            <hr>
+                            <a href="#Performance" class="nav-link">performance</a>
+                            <hr>
+                            <a href="#Resources" class="nav-link">Resources</a>
+                            <hr>
+                            <a href="#Reference" class="nav-link">Reference</a>
+                            <hr>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-9 ">
+                <section class="main-section" id="Get_started">
+                    <header>
+                        <h1>Get started</h1>
+                    </header>
+                    <h3>Select your operating system</h3>
+                    <div class="row icons">
+                        <div class="col-md-3 ">
+                            <i class="fab fa-windows fa-5x"></i>
+                            <p>windows</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fab fa-apple fa-5x"></i>
+                            <p>Ios</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fab fa-linux fa-5x"></i>
+                            <p>Linux</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fab fa-chrome fa-5x"></i>
+                            <p>ChromeOS</p>
+                        </div>
+                    </div>
+
+
+                    <div class="setup_editor">
+                        <h3>Set up an editor</h3>
+                        <p>You can build apps with Flutter using any text editor combined with our command-line tools. However, we recommend using one of our editor plugins for an even better experience. These plugins provide you with code completion, syntax
+                            highlighting, widget editing assists, run & debug support, and more. Follow the steps below to add an editor plugin for Android Studio, IntelliJ, VS Code, or Emacs. If you want to use a different editor, that’s OK</p>
+                    </div>
+                    <div>
+                        <h5>Installing Andriod Studioh</h5>
+                        <p>Android Studio offers a complete, integrated IDE experience for Flutter.</p>
+                        <li>Android Studio, version 3.0 or later</li>
+                        <p>Alternatively, you can also use IntelliJ:</p>
+                        <li>IntelliJ IDEA Community, version 2017.1 or later</li>
+                        <li>IntelliJ IDEA Ultimate, version 2017.1 or later</li>
+                    </div>
+                    <div>
+                        <h5>Install the Flutter and Dart plugins</h5>
+                        <p>To install these:</p>
+                        <ol>
+                            <li>Start Andriod Studioli </li>
+                            <li>Open plugin preferences (Configure > Plugins as of v3.6.3.0 or later).</li>
+                            <li>Selecy Flutter plugin and click install</li>
+                            <li>Click Yes when prompted to install the Dart plugin.</li>
+                            <li>Click <em>Restart</em> when prompted</li>
+                        </ol>
+                        <h5>Write ya first app</h5>
+                        <pre><code class="css">     
+                            $ flutter channel beta
+                            $ flutter upgrade
+                            $ flutter config --enable-web
+                            </code></pre>
+                    </div>
+                </section>
+
+                <section class="main-section" id="Samples_&_tutorials">
+                    <header>
+                        <h1>Samples & tutorials</h1>
+                    </header>
+                    <a href="https://gallery.flutter.dev/#/">Flutter galery[running app]</a>
+                    <br>
+                    <a href="https://flutter.github.io/samples/#">Flutter galery[repo]</a>
+                    <div>
+                        <h5>Good for beginners</h5>
+                        <p>If you’re new to Flutter, we recommend starting with one of these codelabs:</p>
+                        <ul>
+                            <li>
+                                <a href="https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1#0"> Write your first Flutter app, part 1</a> Create a simple mobile app that generates proposed names for a startup company. In part one, you’ll
+                                use a package that returns pairs of words at random and inserts them into an infinite scrolling list. You can also find this codelab on flutter.dev.</li>
+                            <li>
+                                <a href="https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2#0">Write your first Flutter app, part 2 </a> Create a simple mobile app that generates proposed names for a startup company. In part two, you’ll
+                                extend the example from part 1 to allow the user to select favorite word pairs, and add a second “Saved Favorites” page where users can view the selected names. Finally, you’ll change the app’s theme color.
+                            </li>
+
+                            <li>
+                                <a href="https://flutter.dev/docs/get-started/codelab-web">Write your first Flutter app on the web</a> Implement a simple web app in DartPad (no downloads required!) that displays a sign-in screen containing three text
+                                fields. As the user fills out the fields, a progress bar animates along the top of the sign-in area. This codelab is written specifically for the web, but if you have downloaded and configured Android and iOS tooling, the
+                                completed app works on Android and iOS devices, as well.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Tutorials</h5>
+                        <p>The Flutter tutorials teach you how to use the Flutter framework to build mobile applications for iOS and Android.</p>
+                        <p>Choose from the following:</p>
+                        <ul>
+                            <li>
+
+                                <a href="https://flutter.dev/docs/development/ui/layout/tutorial">Building layouts</a>
+                                <p>How to build layouts using Flutter’s layout mechanism. Once you’ve learned basic principles, you’ll build the layout for a sample screenshot.</p>
+                            </li>
+                            <li>
+                                <a href="https://flutter.dev/docs/development/ui/interactive">Adding interactivity to your Flutter app</a>
+                                <p>You’ll extend the simple layout app created in “Building Layouts in Flutter” to make an icon tappable. Different ways of managing a widget’s state are also discussed.</p>
+                            </li>
+                            <li>
+                                <a href="https://flutter.dev/docs/development/ui/animations/tutorial">Animations in Flutter</a>
+                                <p>Explains the fundamental classes in the Flutter animation package (controllers, Animatable, curves, listeners, builders), as it guides you through a progression of tween animations using different aspects of the animation
+                                    APIs.
+                                </p>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </section>
+
+                <section class="main-section" id="Development">
+                    <header>
+                        <h1>Development </h1>
+                    </header>
+                </section>
+
+
+
+                <section class="main-section" id="Performance">
+                    <header>
+                        <h1>performance</h1>
+                    </header>
+
+                    <h3>Measuring your app's size</h3>
+                    <p>Many developers are concerned with the size of their compiled app. As the APK, app bundle, or IPA version of a Flutter app is self-contained and holds all the code and assets needed to run the app, its size can be a concern. The larger
+                        an app, the more space it requires on a device, the longer it takes to download, and it may break the limit of useful features like Android instant apps.</p>
+                    <h3>Checking the total size</h3>
+
+                    <p>A default release build, such as one created by
+                        <a href="">flutter build apk </a> or <a href="">flutter build ios</a>, is built to conveniently assemble your upload package to the Play Store and App Store. As such, they’re also not representative of your end-users’ download
+                        size. The stores generally reprocess and split your upload package to target the specific downloader and the downloader’s hardware, such as filtering for assets targeting the phone’s DPI, filtering native libraries targeting the
+                        phone’s CPU architecture.</p>
+
+                    <h3>Performance best practices</h3>
+                    <p>Generally, Flutter applications are performant by default, so you only need to avoid common pitfalls to get excellent performance instead of needing to micro-optimize with complicated profiling tools. These best recommendations will
+                        help you write the most performant Flutter app possible.</p>
+                    <p>If you are writing web apps in Flutter, you might be interested in a series of articles, written by the Flutter Material team, after they modified the Flutter Gallery app to make it more performant on the web:</p>
+                    <ul>
+                        <li>Optimizing performance in Flutter web apps with tree shaking and deferred loading</li>
+                        <li>Improving perceived performance with image placeholders, precaching, and disabled navigation transitions</li>
+                        <li>building Peerformant utte widget</li>
+                    </ul>
+
+                </section>
+
+
+                <section class="main-section" id="Resources">
+                    <header>
+                        <h1> Resources</h1>
+                    </header>
+                    <h3>Bootstrap into Dart</h3>
+                    <p>New to the Dart language? We compiled our favorite resources to help you quickly learn Dart. Many people have reported that Dart is easy and fun to learn. We hope these resources make Dart easy for you to learn, too.</p>
+                    <p>
+                        <a href="https://dart.dev/guides/language/language-tour">Language tour</a> Your best introduction to the Dart language. Learn about Dart’s features such as strong types, closures, libraries, lexical scoping, top-level functions,
+                        named parameters, async / await, and lots more.</p>
+                    <p>
+                        <a href="https://dart.dev/guides/libraries/library-tour">Library tour</a> A good overview of Dart’s powerful core libraries. Learn about Dart’s support for collections, async, math, numbers, strings, JSON, and more.
+                    </p>
+                    <p>
+                        <a href="https://codelabs.developers.google.com/codelabs/from-java-to-dart">Intro to Dart for Java Developers </a> codelab Use your Java knowledge to get up and running quickly with Dart. Learn about classes, constructors, parameters,
+                        and interfaces with examples from the Java Tutorial.
+                    </p>
+
+                    <h3>Flutter compatibility policy</h3>
+                    <p>The Flutter team tries to balance the need for API stability with the need to keep evolving APIs to fix bugs, improve API ergonomics, and provide new features in a coherent manner. To this end, we have created a test registry where
+                        you can provide unit tests for your own applications or libraries that we run on every change to help us track changes that would break existing applications. Our commitment is that we won’t make any changes that break these tests
+                        without working with the developers of those tests to (a) determine if the change is sufficiently valuable, and (b) provide fixes for the code so that the tests continue to pass.</p>
+                    <h3>Announcements and migration guides</h3>
+                    <p>
+                        If we do make a breaking change (defined as a change that caused one or more of these submitted tests to require changes), we will announce the change on our
+                        <a href="https://groups.google.com/forum/#!forum/flutter-announce">flutter-announce </a> mailing list as well as in our release notes.
+                    </p>
+                    <h3>Flutter Design Documents</h3>
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1fkUpos4hbJF0NYSwjNLWct2UGDg-AfhxzlR6p2g0w9M">/go/everything-builds-from-a-module</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1OulURfRSWgJnnFA_cSup4ev7wrJwnZ7Siao_FGbLN9I">/go/remove-include-flutter-groovy</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1imsVxbeAsttTi90EFpbnbVzov9z0xXd7tLCAr_QAJ38">/go/build-flows</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1M_GsAL8C1NxbsmzI35w2Th1wvX1KMoPHY5yeeNbzjY0">/go/add-to-app-samples</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1MuIUz9pyE_bBZPbtMCj3pYgkdgG4s4Egh6FMknTngKw">/go/build-aar</a>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <section class="main-section" id="Reference">
+                    <header>
+                        <h1>Reference</h1>
+                    </header>
+                    <p>All the documentation in this page is gotten from the
+                        <a href="https://flutter.dev/docs">Flutter documentation page</a>
+                    </p>
+                    <h3>Flutter widget index</h3>
+                    <p>This is an alphabetical list of nearly every widget that is bundled with Flutter. You can also
+                        <a href="https://flutter.dev/docs/development/ui/widgets">browse widgets by category.</a>
+                    </p>
+                    <p>You might also want to check out our Widget of the Week video series on the
+                        <a href="https://www.youtube.com/flutterdev">Flutter YouTube channel.</a> Each short episode features a different Flutter widget. For more
+                        <a href="https://flutter.dev/docs/resources/videos"> video </a>series, see our videos page.</p>
+                    <p>
+                        You can get the Api Reference on our
+                        <a href="https://api.flutter.dev/">page</a>
+                    </p>
+                    <p>
+                        Flutter CLI reference can also be gotten on our Documentation
+                        <a href="https://flutter.dev/docs/reference/flutter-cli">page</a>
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+        #navbar {
+            padding: 15% 15% 0 15%;
+        }
+        
+        .nav-link {
+            color: #000;
+        }
+        
+        .main-section {
+            padding: 5% 7%;
+            font-family: "montserrat";
+            line-height: 1.5rem;
+        }
+        
+        .icons {
+            padding: 5% 0;
+            color: #28abb9;
+        }
+        
+        h1 {
+            color: #28abb9;
+        }
+        
+        .navigation {
+            border-right: #9ba4b4 solid 3px;
+        }
+        
+        a {
+            color: #28abb9;
+        }
+        
+        @media screen and (min-width: 900px) {
+            a {
+                color: #28abb9;
+            }
+        }
+        
+        code {
+            border-radius: 5px;
+            font-family: "montserrat";
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
